@@ -1,0 +1,38 @@
+/* #first-heading{
+    color: red;
+    font-size: 30px;
+}
+.heading-class{
+    color: blue;
+    font-size: 20px;
+
+} */
+ *{
+    color: red;
+
+ }
+ li {
+    color: violet !important;
+ }
+  li {
+    color: green;
+ }
+/*Global variable*/
+:root{
+    --text-colore: blue;
+}
+h1{
+    color: var(--text-colore);
+}
+h2{
+    color: var(--text-colore);
+}
+h3{
+    /*Local variable*/
+    --my-color : violet;
+    color: var(--my-color);
+}
+
+#unit h1,li{
+    color:black ;
+}

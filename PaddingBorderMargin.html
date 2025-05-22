@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Padding Border Margin</title>
+        <meta charset="utf-8"/>
+        <style>
+            .box{
+                height: 60px;
+                width: 60px;
+                color: #fff;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                float: left;
+            }
+            .box1{
+                background-color: #333;
+                /* padding-top: 10px;
+                padding-right: 20px; */
+                padding: 10px 5px;
+            }
+            .box2{
+                background-color: orange;
+                margin: 10px;
+            }
+            .box3{
+                background-color: firebrick;
+                 border-width: 10px 12px;
+                border-style:   double ;
+                border-color: orange; 
+                box-sizing: border-box;
+                /* box-sizing: border-box;  mặc định box-sizing là contentbox, padding và border sẽ làm tăng kích thước đói tượng
+                    khi chuyển sang  border box thì padding và border không còn lằm tăng kích thước đối tượng nữa , kích thước đối tượng sẽ 
+                    bị tự động trừ đi sao cho bằng với kích thước ĐƯỢC KHAI BÁO BAN ĐẦU
+                    - nếu border hay padding vượt quá giá trị thì đối tượng vẫn bị tăng kích thước 
+                */
+                /* border: 10px solid #333;  */
+            }
+        </style>
+    </head>
+    <body>
+        <!--padding là lớp đệm, nằm ngay ngoài lớp content (ở đây là 1 hình hợp 60x60) -->
+        <!-- sau khi thêm padding vào 1 đối tượng thì kích thước sẽ được tăng thêm kích thước vì lớp đệm được thêm vào 
+         backgound sẽ được tăng thêm-->
+        <div class="box box1">Box 1</div>
+        <!--border là 1 lớp vỏ bên ngoài lớp padding, cả border và padding đều tăng kích thước của đối tượng-->
+        <div class="box box2">Box 2</div>
+        <!--margin không tăng kích thước của đối tượng mà tăng khoảng cách của đối tượng với các đối tượng khác
+        . là khoảng cách đẩy ra từ element -->
+        <div class="box box3">Box 3</div>
+    </body>
+
+</html>

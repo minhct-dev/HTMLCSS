@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit in CSS</title>
+        <meta charset="utf-8"/>
+        <style>
+            html{
+                font-size: 10px;
+            }
+            #box{
+                background-color: red;
+                height: 100px;
+                width: 100px;
+            }
+            #box2{
+                background-color: blue;
+                height: 100px;
+                width: 40%;
+            }
+            #unit{
+                font-size: 20px;
+            }
+            #example h1{
+                font-size: 4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+        <div id="box2"></div>
+        <div id="example">
+            <h1>example</h1>
+
+        </div>
+        <div id="unit">
+            <h1>1. Absolute units? (Là giá trị cố định)</h1>
+            <ul>
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+            <h1>2. Relative units? (Giá trị này không cố định mà sẽ phụ thuộc vào 1 yếu tố nào đấy)</h1>
+            <ul>
+                <li>% (phụ thuộc vào thẻ chứa nó)</li>
+                <li>rem (Phụ thuộc vào thẻ html)</li>
+                <li>em (Phụ thuộc vào thẻ gần nhất chứa nó)</li>
+                <!--vw vh là viewport width/heigh so với kích trình duyệt-->
+                <li>vw</li>
+                <li>vh</li>
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+            </ul>
+        </div>
+    </body>
+</html>

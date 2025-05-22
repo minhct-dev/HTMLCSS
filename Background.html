@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin: 0;
+            }
+            .header{
+                width: 100%;
+                height: 100px;
+                background-color: #333;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px dashed #fff;
+                /*background clip sẽ quyết định background của đối tượng sẽ được đổ từ phần nào 
+                mặc định là border box: đổ từ border vào, padding box : bỏ qua border và đổ từ padding*/
+                background-clip: border-box;
+            }
+            .header2{
+                width: 100%;
+                height: 100vh;
+                margin-top: 10px;
+                /*back groundimage gán ảnh vào background
+                background size sẽ chỉnh chiều ngang của ảnh và chiều rộng tự động
+                background image có thể kết hợp nhiều ảnh với nhau và kết hợp được với dải màu rgba
+                thứ tự hiển thị từ trên xuống 
+                */
+                background-image:url(https://png.pngtree.com/png-clipart/20230512/original/pngtree-isolated-front-view-cat-on-white-background-png-image_9158426.png),
+                url(https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg);
+                
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .header3{
+                width: 100%;
+                height: 100vh;
+                margin-top: 10px;
+                /*linear gardient là 1 function giúp tạo ra giải chuyển màu, biến số truyền vào là 
+                hướng xoay của dải màu chuyển(0-360 độ), 2 màu tiếp theo là 2 màu đầu cuối của dải ví dụ : #333,#fff
+                
+                */
+                /*những màu như #333, #fff là màu cứng gọi là thập lục phân, có thể chuyển sang màu rgba(màu trong suốt) nhờ  dev tools*/
+                background-image: linear-gradient(0,#333,#fff);
+            }
+
+            .header4{
+                width: 100%;
+                height: 100vh;
+                margin-top: 10px;
+                background-image: linear-gradient(0,rgba(51,51,51,0.5),rgba(255,255,255,0.5)),
+                url(https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            /*ứng dụng của repeat trong background image*/
+            .header5{
+                width: 100%;
+                height: 50vh;
+                margin-top: 10px;
+                background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-seamless-repeat-pattern-with-flowers-and-leaves-scandinavian-childish-drawing-picture-image_1172103.jpg);
+                background-size: 100px;
+                
+                background-repeat: repeat-x;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="header2"></div>
+        <div class="header3"></div>
+        <div class="header4"></div>
+        <div class="header5"></div>
+    </body>
+</html>
