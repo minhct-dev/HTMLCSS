@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .html,body{
+                margin: 0;
+            }
+            .box{
+                width: 100%;
+                height: calc(100px + 20px);
+                background: rgb(33, 33, 33);
+            }
+            .box::after{
+                content: "Xin chao cac ban";
+                color: #cac1c1;
+            }
+            
+            a::after {
+                content: " ("attr(href)")"; /*content rất quan trọng để pseudo element có thể tồn tại*/
+                display: block; /*muốn cho content có tính chất khối thì dùng display block*/
+            }
+            .headerClass:hover{
+                color: red;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <a href="https://facebook.com.vùng">TO FACEBOOK</a>
+        <ul>
+            <li>var()</li>
+            <li>linear-gradient()</li>
+            <li>rgba()</li>
+            <li>gba()</li>
+            <li>calc()</li>
+            <li>attr()</li>
+        </ul>
+
+        <h1 class="headerClass">CSS pseudo-class</h1>
+
+        <ul>
+    <!--root sẽ tham chiếu đến phần tử đầu tiên của dối tượng
+            hover kích hoạt khi di chuột vào phần tử 
+            active kích hoạt khi click chuột vào phần tử 
+            fistchild và last child  sẽ chọn phần tử đầu cuối của 1 list 
+    -->
+            <li>:root</li>  
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:first-child</li>
+            <li>:last-child</li>
+        </ul>
+        <h1 class="headerClass">CSS pseudo-elements</h1>
+        <div class="box"></div>
+        <ul>
+    <!--
+        
+    -->
+            <li>::before</li>  
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+        <!--thứ tự của position để có thể tùy chỉnh vị trí của đối tượng không bị phụ thuộc vào đối tượng nào hết-->
+        <h1 class="positionS">Position of CSS</h1>
+        <ul>
+            <li>Relative</li><!--chọn chính vị trí  ban đầu của dối tượng  để làm gốc tọa độ và đối tượng không bị phụ thuộc vào đối tượng nào hết-->
+            <li>Absolute</li><!--dùng với 1 đối tượng là con của 1 thẻ khác, tìm đến thẻ gần nhất có position và chọn thẻ đấy là gốc tọa độ-->
+            <li>Fixed</li><!--position fixed sẽ khóa cứng vị trị của đối tượng đấy trên cửa sổ trình duyệt-->
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>
