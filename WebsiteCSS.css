@@ -1,0 +1,17 @@
+*{
+    padding: 12px;
+}
+
+.CSSButton{
+    display: flex;
+    justify-content: space-around;
+}
+.SubButton{
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
