@@ -1,0 +1,108 @@
+*{
+    padding: 12px;
+    
+}
+
+.CSSButton{
+    display: flex;
+    justify-content: space-around;
+}
+.SubButton{
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*hover enable when the cursor is on the element 
+  active enable when the cursor is click on the element
+*/
+.SubButton:hover{
+    opacity: 0.75;
+}
+.SubButton:active{
+    background-color: blue;
+}
+/*note, from the very begining, browsers are text-based so by default, 
+browsers allign item based on the text 
+
+so we got : vertical-allign: top to allign item to the top
+*/
+.JoinButton{
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: rgb(46, 88, 253);
+    color:rgb(46, 88, 253);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.15s, color 0.15s;
+}
+.JoinButton:hover{
+    background-color: rgb(46, 88, 253);
+    color: white;
+}
+.JoinButton:active{
+    opacity: 0.8;
+}
+.TweetButton{
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(24, 122, 243);
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    transition: box-shadow 0.15s;
+}
+.TweetButton:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.SignupButton{
+    height: 45px;
+    width: 120px;
+    background-color: rgb(50, 154, 50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    transition: box-shadow 0.15s;
+}
+.SignupButton:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+/*Excercise*/
+.StretchButton{
+    background-color: rgb(50, 154, 50);
+    padding: 12px 20px 12px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: padding 0.5s;
+    vertical-align: top;
+}
+.StretchButton:hover{
+    padding: 20px 30px 20px 30px
+}
+.ShadowButton{
+    border: none;
+    color: white;
+    background-color: rgb(50, 154, 50);
+    padding: 12px 20px 12px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px black;
+}
+.ShadowButton:active{
+    box-shadow: none;
+    margin: 5px 0 0 5px;
+}
+
