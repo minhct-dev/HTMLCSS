@@ -105,4 +105,72 @@ so we got : vertical-allign: top to allign item to the top
     box-shadow: none;
     margin: 5px 0 0 5px;
 }
+/*-----------------------------------------*/
+.ExImage{
+    display: flex;
+    flex-direction: column;
+}
+.ex7a{
+    width: 300px;
+    border-radius: 30px;
+}
+.ex7b{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.ex7c{
+    height: 300px;
+    width: 300px;
+    border-radius: 360px;
+    object-fit: cover;
+    object-position: center;
+}
 
+/* searchboxEX --------------------------*/
+.searchboxEX{
+    display: flex;
+    margin-top: 5px;
+    align-items: flex-start;
+    gap: 20px;
+}
+.searchIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    padding: 0;
+}
+.search-bar{
+    height: 50px;
+    width: 300px;
+    vertical-align: middle;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+.search-bar::placeholder{
+    font-weight: 700px;
+    padding: 10px;
+}
+.search-button{
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(24, 122, 243);
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    transition: box-shadow 0.15s;
+    
+}
+.search-button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
