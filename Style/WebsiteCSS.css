@@ -130,10 +130,13 @@ so we got : vertical-allign: top to allign item to the top
 
 /* searchboxEX --------------------------*/
 .searchboxEX{
-    display: flex;
+    
     margin-top: 5px;
     align-items: flex-start;
     gap: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.3);
 }
 .searchIcon{
     width: 50px;
@@ -173,4 +176,124 @@ so we got : vertical-allign: top to allign item to the top
 }
 .search-button:hover{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+/*---------------------------------------------*/
+.NameBox, .EmailBox{
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height: 10px;
+}
+.ex8b{
+    display: flex;
+    align-items: center;
+}
+.survey-invite{
+    display: inline-block;
+    width: 300px;
+    padding: 0;
+}
+.yes-button, .no-button{
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    
+}
+.ex8c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gg-logo{
+    width: 500px;
+}
+.gg-search{
+    width: 700px;
+    border-radius: 30px;
+    border: none;
+    box-shadow:  3px 3px 5px 0 rgba(0,0,0,0.3);
+}
+
+/*----------------------------------------------------*/
+.square-div{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    display: inline-block;
+}
+.circle-div{
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    display: inline-block; 
+    border-radius: 360px;
+}
+.service-satify{
+    border-width: 1px;
+    border-style: solid;
+    width: 300px;
+    border-radius: 10px;
+    border-color: rgba(128,128,128,0.3);
+}
+.youtube-music{
+    background-color: rgb(31, 26, 26);
+    width: 500px;
+    color: white;
+    font-family: Arial;
+    padding: 30px 20px 10px 20px;
+}
+.yt-firstline{
+    font-size: 35px;
+    font-weight: bold;
+    padding:  0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.yt-secondline{
+    font-size: 20px;
+    color: rgb(147, 140, 140);
+    padding: 0;
+    margin-top: 0;
+}
+.reel-item{
+    width: 250px;
+    display: inline-block;
+    font-family: Arial;
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 1px rgb(31, 26, 26, 0.5);
+    margin-right: 15px;
+
+}
+
+.friend-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+
+}
+.friend-name{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.friend-mutual{
+    padding: 0;
+    color: gray;
+    margin: 0 0 15px 0;
+    
+}
+.add-btn{
+    color: white;
+    font-weight: 300;
+    background-color: rgb(38, 93, 212);
+    border:none;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 15px;
 }

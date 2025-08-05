@@ -1,6 +1,6 @@
 .thumbnail{
     width: 300px;
-    
+    display: block;
 }
 .search-bar{
     width: 200px;
@@ -10,6 +10,7 @@
     border: none;
     box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.1);
     padding-left: 15px;
+    display: block;
 }
 /*
 Display property (most important):
@@ -17,6 +18,13 @@ Display property (most important):
     2.inline-block element: only takes up as much space as needed (img , input, ...)
     3.inline element = appear within a line of text
 */ 
+.video-preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
 
 
 
