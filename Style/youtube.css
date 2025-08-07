@@ -24,6 +24,28 @@ Display property (most important):
     vertical-align: top;
 }
 
+.channel-picture{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.profile-picture{
+    width: 40px;
+    border-radius: 360px;
+    
+}
+.video-info{
+    display: inline-block;
+    width: 200px;
+    font-family: roboto;
+}
+.video-title{
+    margin-top: 0;
+}
+
+.thumbnail-row{
+    margin-bottom: 12px;
+}
 
 
 
