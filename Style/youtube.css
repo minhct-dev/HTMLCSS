@@ -1,6 +1,6 @@
 .thumbnail{
-    width: 300px;
-    display: block;
+  width: 100%;
+    
 }
 .search-bar{
     width: 200px;
@@ -17,32 +17,51 @@ Display property (most important):
     1.block element: talk the entire line which contain the element
     2.inline-block element: only takes up as much space as needed (img , input, ...)
     3.inline element = appear within a line of text
-*/ 
+*/
+
+/*inline - block will have some alligment problem that these was some space between each inlineblaock about 5px */
+p{
+    font-family: roboto , arial;
+} 
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 35px;
+}
 .video-preview{
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
+
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
 .channel-picture{
-    display: inline-block;
-    width: 50px;
     vertical-align: top;
 }
 .profile-picture{
     width: 40px;
+    object-fit: cover;
     border-radius: 360px;
-    
 }
+
 .video-info{
     display: inline-block;
-    width: 200px;
-    font-family: roboto;
+   
 }
 .video-title{
     margin-top: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
 }
-
+.video-author , .video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+    margin: 0;
+}
 .thumbnail-row{
     margin-bottom: 12px;
 }
