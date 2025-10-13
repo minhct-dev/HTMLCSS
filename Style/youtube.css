@@ -1,9 +1,28 @@
-.thumbnail{
-  width: 100%;
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
     
+
 }
-.search-bar{
+.left-section{
+    background-color: aqua;
+    width: 150px;
+}
+.right-section{
+    background-color: aqua;
     width: 200px;
+}
+.middle-section{
+    background-color: lightpink;
+    flex: 1;
+    margin-left: 70px;
+    margin-right:30px;
+
+}
+
+.search-bar{
+    width: 100px;
     font-size: 25px;
     margin-left: 20px; 
     border-radius: 15px;  
@@ -23,6 +42,14 @@ Display property (most important):
 p{
     font-family: roboto , arial;
 } 
+body{
+    margin: 0;
+
+}
+.thumbnail{
+  width: 100%;
+    
+}
 .video-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
