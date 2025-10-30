@@ -10,9 +10,20 @@
         <button onclick="cartQuantity+=2; console.log(`Quantity : ${cartQuantity}`)">+2</button>
         <button onclick="cartQuantity+=3; console.log(`Quantity : ${cartQuantity}`)">+3</button>
         <button onclick="console.log(`Reset cart`);cartQuantity=0; console.log(`Quantity : ${cartQuantity}`)">Reset Cart</button>
-
+        <button onclick="removeCart(1); console.log(`Quantity : ${cartQuantity}`)">Remove from cart</button>
+        <button onclick="removeCart(2); console.log(`Quantity : ${cartQuantity}`)">-2</button>
+        <button onclick="removeCart(3); console.log(`Quantity : ${cartQuantity}`)">-3</button>
         <script>
+            function removeCart(i){
+                if(cartQuantity-i<0) console.log(`invalid number`);
+                else return cartQuantity-=i;
+            }
+
             let cartQuantity = 0;
+            let  name = `Cao Tuan Minh`;
+            console.log(`My name is ${name}`);
+            let cost=5+2*3+9;
+            console.log(`Cost: $${cost}`);
         </script>
         
     </body>
