@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <p>Calculator</p>
+        <p>
+            <button onclick="displayString+='1'; console.log(displayString)">1</button>
+            <button onclick="displayString+='2'; console.log(displayString)">2</button>
+            <button onclick="displayString+='3'; console.log(displayString)">3</button>
+            <button onclick="displayString+='+'; console.log(displayString)">+</button>
+        </p>
+        <p>
+            <button onclick="displayString+='4'; console.log(displayString)">4</button>
+            <button onclick="displayString+='5'; console.log(displayString)">5</button>
+            <button onclick="displayString+='6'; console.log(displayString)">6</button>
+            <button onclick="displayString+='-'; console.log(displayString)">-</button>
+        </p>
+        <p>
+            <button onclick="displayString+='7'; console.log(displayString)">7</button>
+            <button onclick="displayString+='8'; console.log(displayString)">8</button>
+            <button onclick="displayString+='9'; console.log(displayString)">9</button>
+            <button onclick="displayString+='*'; console.log(displayString)">*</button>
+        </p>
+        <p>
+            <button onclick="displayString+='0'; console.log(displayString)">0</button>
+            <button onclick="displayString+='.'; console.log(displayString)">.</button>
+            <button onclick="displayString=eval(displayString); console.log(displayString)">=</button>
+            <button onclick="displayString+='/'; console.log(displayString)">/</button>
+        </p>
+
+        <script>
+            let displayString=``;
+            
+        </script>
+    </body>
+</html>
